@@ -1,7 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 
 % Packages
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage[hidelinks,colorlinks=true,urlcolor=blue]{hyperref}
 \usepackage{titlesec}
@@ -42,21 +42,22 @@ B.S. Computer Science with Electrical Engineering Minor \hfill GPA: 3.9 \\
 
 %-------------------- EXPERIENCE --------------------
 \section*{Experience}
-\textbf{Planetary Cloud Tracking Research} (C) \hfill Jun 2025 -- Present
-\begin{itemize}
-    \item Exploring computer vision algorithms to track wind patterns on \\
-        Jupiter and other planetary atmospheres.
-    \item Implementing Image Processing algorithms in C
-    \item Soon to be parallelized using either CUDA or compute shaders
-\end{itemize}
-
 \textbf{Firmware Engineer --- Formula Slug, FSAE} (C++) \hfill Sept 2024 -- Present
 \begin{itemize}
-    \item Designed and implemented software handling communication at 500 kHz \\
-        over CAN bus.
-    \item Built on top of MbedOS, RTOS for STM32 MCUs; CMake build tool with \\
-        ninja for flashing to MCU
+    \item Implemented automatic lap counting using GPS data and converting to local coordinate \\
+        plane with a flat-Earth approximation and tolerance of $\pm$ 10 meters
+    \item Designed and implemented software handling communication at 500 kHz over CAN bus.
+    \item Built on top of MbedOS, RTOS for STM32 MCUs; CMake with ninja for building and \\
+        flashing to MCU
     \item Developed tooling to test hardware/software; collaborated with team of $\sim$100.
+\end{itemize}
+
+\textbf{Planetary Cloud Tracking Research} (C) \hfill Jun 2025 -- Present
+\begin{itemize}
+    \item Exploring computer vision algorithms to track wind patterns on Jupiter and other \\
+        planetary atmospheres.
+    \item Implementing image processing algorithms in C
+    \item Soon to be parallelized using either CUDA or compute shaders
 \end{itemize}
 
 \textbf{Instruction Officer --- Google Developer Groups on Campus} \hfill Mar 2025 -- Present
@@ -111,5 +112,8 @@ Organizer
 \textbf{Programming Languages:} Python, C/C++, Java, C\#, Node.js \\
 \textbf{Programming Tools:} Linux, Git/GitHub, GNU Make, Vim, Valgrind, Docker \\
 \textbf{Lab Tools:} Oscilloscope, Power Supply, Multimeter, Circuit Design (KiCad), Soldering
+\textbf{Languages:} Python, C/C++, Java, C\#, Node.js \\
+\textbf{Tools:} Linux, Git/GitHub, GNU Make, vim, Valgrind, Docker \\
+\textbf{Languages:} English (Fluent), French (Conversational), Cantonese (Spoken)
 
 \end{document}
