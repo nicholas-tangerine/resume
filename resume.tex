@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 % Packages
 \usepackage[margin=0.5in]{geometry}
@@ -29,7 +29,7 @@
 %-------------------- EDUCATION --------------------
 \section*{Education}
 \textbf{UC Santa Cruz}              \hfill Sept 2024 -- Jun 2027    \\
-B.S. Computer Science, EE Minor     \hfill GPA: 3.9                 \\
+B.S. Computer Science, EE Minor     \hfill GPA: 3.95                \\
 \textit{Relevant Coursework:} Data Structures \& Algorithms, Intro to \\
 Electronic Circuits, Differential Equations
 
@@ -38,18 +38,15 @@ Electronic Circuits, Differential Equations
 \textbf{Firmware Engineer --- Formula Slug, FSAE} (C++) \hfill Sept 2024 --
 Present
 \begin{itemize}
-    \item Implemented automatic lap counting using GPS data and converting to \\
-        local coordinate plane with a flat-Earth approximation and tolerance of \\
-        $\pm$ 10 meters
-    \item Developped tooling to debug and test software for throttle control
+    \item Implemented automatic lap counting using GPS data from CAN bus with a \\
+        flat-Earth approximation and tolerance of $\pm$ 10 meters
     \item Designed schematic for UART$\xleftrightarrow{}$USB for quick \\
         debugging and logging using FT320XQ on KiCad
-    \item Designed and implemented software handling communication at 500 kHz \\
-        over CAN bus
-    \item Ensured safe power delivery to LV systems, car shutoff when \\
-        undervolting through relay actuation
     \item Built on top of MbedOS, RTOS for STM32 MCUs; CMake with ninja for \\
         building and flashing to ARM-Cortex M based MCU
+    \item Ensured safe power delivery to LV systems, car shutoff when \\
+        ADC detects undervolting through relay actuation
+    \item Developped tooling to debug and test software for throttle control
 \end{itemize}
 
 \textbf{Planetary Cloud Tracking Research --- UCSC Earth and Planetary Sciences} (C) \hfill Jun 2025 -- Present
@@ -61,17 +58,15 @@ Present
     \item Solving Euler-Lagrange equations with C and numerical integration
 \end{itemize}
 
-\textbf{Vice President \& Coding Branch Leader --- BOBTutor} \hfill 2021 --
-2022
-\begin{itemize}
-    \item Organized and led 3 coding programs; mentored 5 new team members.
-    \item Coordinated schedules and developed resources to streamline teaching.
-\end{itemize}
-
 %-------------------- PROJECTS --------------------
 \section*{Projects \& Other Experience}
-\textbf{Lead Systems Engineer --- NASA's NPWEE Program} \hfill June 2025 -- Aug
-2025
+\textbf{Musical Auto-Transcribe} \hfill Dec 2025 -- Present
+\begin{itemize}
+    \item Turns audio files into human readable musical notation
+    \item Applying FFT algorithms, Hann windowing, and general signal denoising
+\end{itemize}
+
+\textbf{Lead Systems Engineer --- NASA's NPWEE Program} \hfill June 2025 -- Aug 2025
 \begin{itemize}
     \item Worked on mid-air battery swap infrastructure for electric planes.
     \item Spearheaded design and writing for the final proposal of 7 pages.
@@ -94,24 +89,18 @@ Present
     \item Implemented ODE solvers and visualization of orbital trajectories.
 \end{itemize}
 
-\textbf{Ray Tracing in One Weekend} (C++) \hfill 2025
-\begin{itemize}
-    \item Implemented a physically-based rendering engine in C++.
-\end{itemize}
-
 %-------------------- LEADERSHIP & ACTIVITIES --------------------
 \section*{Leadership \& Activities}
 \textbf{Formula Slug} --- Software + Firmware Engineering Member \\
 \textbf{Association for Computing Machinery (ACM)} --- Member \\
-\textbf{Google Developer Groups on Campus} --- Instruction Officer, Workshop
-Organizer
+\textbf{Google Developer Groups on Campus} --- Former Instruction Officer, Workshop Organizer
 
 %-------------------- SKILLS --------------------
 \section*{Skills}
 \textbf{Programming Languages:} Python, C/C++, Java, C\#, Node.js \\
-\textbf{Programming Tools:} Linux, Git/GitHub, GNU Make, Vim, Valgrind, Docker
-\\
+\textbf{Programming Tools:} Linux, Git/GitHub, GNU Make, Vim, Valgrind, Docker \\
 \textbf{Lab Tools:} Oscilloscope, Power Supply, Multimeter, Circuit Design (KiCad), Siemens NX, Soldering \\
+\textbf{Misc:} DSP, FFT(W) \\
 \textbf{Languages:} English (Fluent), French (Conversational), Cantonese (Spoken) \\
 
 \end{document}
