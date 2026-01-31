@@ -29,45 +29,40 @@
 %-------------------- EDUCATION --------------------
 \section*{Education}
 \textbf{UC Santa Cruz}              \hfill Sept 2024 -- Jun 2027    \\
-B.S. Computer Science, EE Minor     \hfill GPA: 3.95                \\
-\textit{Relevant Coursework:} Data Structures \& Algorithms, Intro to \\
-Electronic Circuits, Differential Equations
+B.S. Computer Science, EE Minor     \hfill GPA: 3.95
 
 %-------------------- EXPERIENCE --------------------
 \section*{Experience}
-\textbf{Firmware Engineer --- Formula Slug, FSAE} (C++) \hfill Sept 2024 --
-Present
+\textbf{Formula Slug (Formula Society of Automotive Engineers) @ UC Santa Cruz} \hfill Sept 2024 -- Present \\
+\textit{Firmware Engineer} (C++)
 \begin{itemize}
-    \item Implemented automatic lap counting using GPS data from CAN bus with a \\
-        flat-Earth approximation and tolerance of $\pm$ 10 meters
-    \item 10 MHz UART communication with VN-200 for performant IMU, GPS data
-    \item Firmware for renerative braking and PID-based traction control
-    \item Built on top of MbedOS, RTOS for STM32 MCUs; CMake with ninja for \\
-        building and flashing to ARM-Cortex M based MCU
-    \item Ensured safe power delivery to LV systems, car shutoff when \\
-        ADC detects undervolting through relay actuation
-    \item Developped tooling to debug and test software for throttle control
+    \item Developing firmware for a custom electric vehicle for the FSAE international \\
+        collegiate competition.
+    \item Implemented automatic lap counting using GPS data from CAN bus with a \\ 
+        flat-Earth approximation and tolerance of $\pm$ 10 meters.
+    \item Managed 10 MHz UART communication with VN-200 for performant IMU and GPS data \\
+        acquisition.
+    \item Developed firmware for regenerative braking and PID-based traction control on STM32 MCUs.
+    \item Utilized MbedOS RTOS, CMake, and Ninja for building and flashing to ARM-Cortex M cores.
+    \item Engineered safety-critical power delivery systems, implementing LV undervolting detection \\
+        and relay actuation.
 \end{itemize}
 
-\textbf{Planetary Cloud Tracking Research --- UCSC Earth and Planetary Sciences} (C) \hfill Jun 2025 -- Present
+\textbf{UCSC Earth and Planetary Sciences} \hfill Jun 2025 -- Present \\
+\textit{Planetary Cloud Tracking Research} (C/C++)
 \begin{itemize}
-    \item Exploring computer vision algorithms to track wind patterns on \\
-        Jupiter and other planetary atmospheres.
+    \item Exploring computer vision algorithms to track wind patterns on Jupiter and other \\
+        planetary atmospheres.
     \item Exposure to and translation between HDF5, NetCDF, TIFF, etc.
     \item Using CMake to manage complex, large-scale projects
     \item Implementing image/signal processing algorithms in C
-    \item Solving Euler-Lagrange equations and numerical integration
+    \item Solving Euler-Lagrange equations with numerical integration
 \end{itemize}
 
 %-------------------- PROJECTS --------------------
 \section*{Projects \& Other Experience}
-\textbf{Musical Auto-Transcribe DSP} \hfill Dec 2025 -- Present
-\begin{itemize}
-    \item Turns audio files into human readable musical notation
-    \item Applying FFT algorithms, Hann windowing, and general signal denoising
-\end{itemize}
-
-\textbf{Lead Systems Engineer --- NASA's NPWEE Program} \hfill June 2025 -- Aug 2025
+\textbf{NASA Professional Development Program} \hfill June 2025 -- Aug 2025 \\
+\textit{Lead Systems Engineer}
 \begin{itemize}
     \item Worked on mid-air battery swap infrastructure for electric planes.
     \item Spearheaded design and writing for the final proposal of 7 pages.
@@ -76,10 +71,15 @@ Present
     \item Collaborated on a team of 12.
 \end{itemize}
 
+\textbf{Musical Auto-Transcribe DSP} \hfill Dec 2025 -- Present
+\begin{itemize}
+    \item Turns audio files into human readable musical notation
+    \item Applying FFT algorithms, Hann windowing, and general signal denoising
+\end{itemize}
+
 \textbf{WindowWise --- ACMHacks} (Node.js, Python) \hfill Oct 2024
 \begin{itemize}
-    \item Enables passive cooling systems instead of HVAC by solving heat \\
-        equation
+    \item Enables passive cooling systems instead of HVAC by solving heat equation
     \item Optimizes climate control while reducing energy waste by 100\%.
 \end{itemize}
 
@@ -98,10 +98,12 @@ Present
 
 %-------------------- SKILLS --------------------
 \section*{Skills}
-\textbf{Programming Languages:} Python, C/C++, Java, C\#, Node.js \\
-\textbf{Programming Tools:} Linux, Git/GitHub, GNU Make, Vim, Valgrind, Docker \\
-\textbf{Lab Tools:} Oscilloscope, Power Supply, Multimeter, Circuit Design (KiCad), Siemens NX, Soldering \\
-\textbf{Misc:} DSP, FFT(W) \\
-\textbf{Languages:} English (Fluent), French (Conversational), Cantonese (Spoken) \\
+\begin{tabular}{@{}ll}
+\textbf{Languages:} & C/C++, Python, Java, C\#, Node.js, Bash \\
+\textbf{Embedded/HW:} & RTOS (MbedOS), STM32, CAN bus, UART, SPI, KiCad, Oscilloscopes \\
+\textbf{Tools/DevOps:} & Git, CMake, Ninja, Docker, Valgrind, GNU Make, GDB, Vim \\
+\textbf{Math/Theory:} & DSP, FFT, Numerical Integration, ODE Solvers, PID Control \\
+\textbf{AI/Productivity:} & LLM Prompt Engineering (Copilot, Gemini, Grok), Technical Documentation
+\end{tabular}
 
 \end{document}
