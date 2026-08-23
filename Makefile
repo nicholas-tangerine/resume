@@ -1,5 +1,5 @@
 OUTDIR := ~/Downloads
-OUTFILE := $(OUTDIR)/"Nicholas Tang RESUME.pdf"
+OUTFILE := $(OUTDIR)/"Nicholas_Tang_RESUME.pdf"
 
 .PHONY: all
 
