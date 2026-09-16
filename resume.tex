@@ -8,9 +8,9 @@
 \usepackage{titlesec}
 
 % Formatting tweaks
+\raggedright
 \setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em}
 \setlength{\parindent}{0pt}
-\titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
 \titleformat{\section}{\large\bfseries}{}{0pt}{}[\titlerule]
 \titlespacing*{\section}{0pt}{0.5em}{0.3em}
 
@@ -28,90 +28,66 @@
 
 %-------------------- EDUCATION --------------------
 \section*{Education}
-\textbf{UC Santa Cruz}              \hfill Sept 2024 -- Jun 2028    \\
-B.S. Computer Science, EE Minor     \hfill GPA: 3.9                 \\
-\textit{Relevant Coursework:} Signals and Systems, Embedded OS
+\textbf{UC Santa Cruz} \hfill Sept 2024 -- Jun 2027 \\
+B.S. Computer Science, EE Minor \hfill GPA: 3.9 \\
+\textit{Relevant Coursework:} Signals and Systems, Embedded Operating Systems, Computer Architecture, Data Structures
 
 %-------------------- EXPERIENCE --------------------
 \section*{Experience}
-\textbf{Rivian and Volkswagen Group Technologies}
-\hfill June 2026 -- Sept 2026 \\
+\textbf{Rivian and Volkswagen Group Technologies} \hfill June 2026 -- Sept 2026 \\
 \textit{Software Engineering Intern, Charging}
 \begin{itemize}
-    \item Increased conformance coverage for DIN/ISO standards
-    \item Automating HIL testing across Rivian and VW platforms
-    \item Wrote UDS DIDs for charging-related diagnostics
+    \item Extended protocol conformance for DIN 70121 EV charging communications, expanding unit and Software-in-the-Loop (SIL) test suites to permanently validate and lock in protocol compliance.
+    \item Automated Hardware-in-the-Loop (HIL) integration tests in Python on a general-purpose communications test bench to evaluate cross-brand Rivian and VW vehicle software.
+    \item Configured and implemented 2 new Unified Diagnostic Services (UDS) Data Identifiers (DIDs) on charging ECUs to enforce State of Charge (SoC) limits and enable dynamic pluglock control.
 \end{itemize}
 
-\textbf{Formula Slug (Formula Society of Automotive Engineers) @ UC Santa Cruz}
-\hfill Sept 2024 -- Present \\
-\textit{Firmware Engineer} (C++, KiCad)
+\textbf{Formula Slug (FSAE) @ UC Santa Cruz} \hfill Sept 2024 -- Present \\
+\textit{Firmware Engineer}
 \begin{itemize}
-    \item Developing firmware for a custom electric vehicle for the FSAE
-        international \\
-        collegiate competition.
-    \item Implemented automatic lap counting using GPS data from CAN bus with a
-        \\ 
-        flat-Earth approximation and tolerance of $\pm$ 10 meters.
-    \item Managed 10 MHz UART communication with VN-200 for performant IMU and
-        GPS data \\
-        acquisition.
-    \item Developed firmware for regenerative braking and PID-based traction
-        control on STM32 MCUs.
-    \item Utilized MbedOS RTOS, CMake, and Ninja for building and flashing to
-        ARM-Cortex M cores.
-    \item Engineered safety-critical power delivery systems, implementing LV
-        undervolting detection \\
-        and relay actuation.
+    \item Implemented real-time CAN-bus lap tracking firmware in C++ using flat-Earth position approximation, maintaining spatial accuracy within a $\pm$10-meter margin across thousands of telemetry data points.
+    \item Integrated VN-200 IMU/GPS module over a high-throughput 10 MHz UART interface for deterministic vehicle dynamics data acquisition.
+    \item Developed STM32 MbedOS firmware for closed-loop PID traction control and regenerative braking energy management to improve vehicle handling stability and energy efficiency.
+    \item Engineered safety-critical low-voltage protection routines featuring rapid undervoltage detection and automated relay actuation to protect battery cell integrity.
 \end{itemize}
 
 \textbf{UCSC Baskin Engineering (ECE)} \hfill Mar 2026 -- Present \\
-\textit{High Performance Power Electronics Lab} (Altium)
+\textit{Undergraduate Researcher, High Performance Power Electronics Lab}
 \begin{itemize}
-    \item Working on high performance power electronics hardware and associated
-        embedded systems.
-    \item Developing PCB in Altium for custom minimal TI C2000 modular
-        breakout board.
-    \item Dual Buck converter (5V $\rightarrow$ 3.3V, 3.3V $\rightarrow$ 1.2V) for power and IO power
-    \item Responsible for sourcing parts.
+    \item Designed a multi-layer breakout PCB in Altium Designer for the TI C2000 microcontroller family to accelerate lab prototyping.
+    \item Integrated dual synchronous buck converters (5V $\rightarrow$ 3.3V and 3.3V $\rightarrow$ 1.2V) to deliver stable rail voltages for MCU core and I/O.
+    \item Executed PCB layout routing, trace optimization, ground plane design, and bill of materials (BOM) sourcing.
 \end{itemize}
 
 \textbf{UCSC Earth and Planetary Sciences} \hfill Jun 2025 -- Jan 2026 \\
-\textit{Planetary Cloud Tracking Research} (C/C++)
+\textit{Undergraduate Researcher, Planetary Cloud Tracking}
 \begin{itemize}
-    \item Exploring computer vision algorithms to track wind patterns on
-        Jupiter and other \\
-        planetary atmospheres.
-    \item Exposure to and translation between HDF5, NetCDF, TIFF, etc.
-    \item Using CMake to manage complex, large-scale projects
-    \item Implementing image/signal processing algorithms in C
-    \item Solving Euler-Lagrange equations with numerical integration
+    \item Developed parallelized C/C++ computer vision pipelines implementing optical flow algorithms to extract planetary atmospheric wind vectors from satellite imagery.
+    \item Built pipelines to parse, transform, and normalize large-scale spatial datasets across HDF5, NetCDF, and TIFF formats.
+    \item Formulated numerical integrators to solve continuous Euler-Lagrange fluid equations to model atmospheric motion.
 \end{itemize}
 
 %-------------------- PROJECTS --------------------
 \section*{Projects \& Other Experience}
-\textbf{NASA's Professional Development Program (NPWEE)} \hfill June 2025 --
-Aug 2025 \\
-\textit{Lead Systems Engineer} (Siemens NX)
+\textbf{NASA's Professional Development Program (NPWEE)} \hfill June 2025 -- Aug 2025 \\
+\textit{Lead Systems Engineer}
 \begin{itemize}
-    \item Spearheaded design and writing for the final proposal of 7 pages.
-    \item Researched airspace management and aviation systems; workforce \\
-        development program.
+    \item Led systems architecture design and co-authored a technical proposal for mid-air battery swap infrastructure in electric aviation.
+    \item Conducted trade studies on airspace integration, automated power transfer docking mechanisms, and operational safety protocols.
 \end{itemize}
 
-\textbf{Musical Auto-Transcribe DSP} \hfill Dec 2025 -- Present
+\textbf{Musical Auto-Transcribe DSP} \hfill Dec 2025 -- Present \\
+\textit{Personal Project}
 \begin{itemize}
-    \item Turns audio files into human readable musical notation.
-    \item Applying FFT algorithms, Hann windowing, and general signal denoising.
+    \item Engineered a C-based digital signal processing pipeline that converts raw audio into human-readable musical notation and MIDI output.
+    \item Applied Fast Fourier Transforms (FFT), Hann windowing, and custom denoising filters to perform spectral analysis and pitch detection on complex audio signals.
 \end{itemize}
 
 %-------------------- SKILLS --------------------
 \section*{Skills}
 \begin{tabular}{@{}ll}
 \textbf{Languages:} & C, C++, Python, Bash \\
-\textbf{Embedded \& HW:} & RTOS (MbedOS), STM32, TI C2000, CAN bus, UART, SPI, UDS Diagnostics \\
-\textbf{EDA \& Testing:} & Altium Designer, KiCad, Siemens NX, Oscilloscopes, HIL Testing \\
-\textbf{Build \& DevOps:} & Git, CMake, Ninja, Docker, Valgrind, GNU Make, GDB, Vim \\
-\textbf{Controls \& Theory:} & DSP, FFT, PID Control, Numerical Integration, ODE Solvers \\
+\textbf{Embedded \& HW:} & RTOS (MbedOS), STM32, TI C2000, CAN bus, UART, SPI, UDS Diagnostics, HIL/SIL Testing \\
+\textbf{EDA \& Tools:} & Altium Designer, KiCad, Siemens NX, Oscilloscopes, CMake, Ninja, Docker, Valgrind, GDB, Git \\
 \end{tabular}
 \end{document}
